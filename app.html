@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aadhaar-Voting | Verify</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="./images/favicon.ico"/>
+        <link rel="stylesheet" href="./css/hero2.css"/>
+        <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+     <a class="navbar-brand" href="#"><img src="./images/seflogo1.png" width="70%" style="margin-left: 25px;margin-top: -8px;" /></a>
+    </div>
+    </nav> 
+     </section>
+     <div class="container">
+      <div class="row">
+       <div class="col-md-4 mt-5">
+         <div class="card">
+           <div class="circle">
+               <img src="./images/social.png" alt="" width="90%"/>
+           </div>
+           <div class="card-body">
+        
+         <div role="form" action="#">
+             <div class="login_form">
+               <h2 class="doc">Document Verification</h2>
+               <label class="form-label">Enter OTP</label>
+                         <input type="text" id="inputotp" name="inputotp" class="form-control" placeholder="Enter the Mailed OTP" required autofocus>
+                    </div>
+                    <div class="center">
+                    <button id="verifyotp" class="btn btn-primary block full-width m-b login">Verify</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button id="logout" class="btn btn-primary block full-width m-b login">Logout</button></div>
+                </div>
+                <br>
+                <div id="messagebox" class="alert alert-danger fade in">
+                    <a href="" class="close" data-dismiss="alert">&times;</a>
+                    <strong id="errormsg">Checking for Verification!</strong> 
+                </div>
+            </div>
+        </div>
+       </div>
+      </div>
+     </div>
+        <!-- Mainly scripts -->
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script> 
+        <script type="text/javascript" src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+        <script src="https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css">
+          <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@walletconnect/browser@1.0.0-beta.46/lib/index.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@walletconnect/qrcode-modal@1.0.0-beta.46/lib/index.min.js"></script>
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <script src="trust-wallet-connect-img.js"></script>
+            <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+            <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
+            <script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+            <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
+            <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+            <script type="text/javascript">
+            $(messagebox).hide();
+            const Web3Modal = window.Web3Modal.default;
+            const WalletConnectProvider = window.WalletConnectProvider.default;
+            const Fortmatic = window.Fortmatic;
+            const evmChains = window.evmChains;
+            let web3Modal
+            let provider;
+            let selectedAccount;
+
+             const providerOptions = {
+                walletconnect: {
+                  package: WalletConnectProvider,
+                     options: {
+                            rpc: {
+                                97: 'https://data-seed-prebsc-1-s1.binance.org:8545/'
+                            },
+                            chainId: 97
+                        }
+                },            
+              };
+
+              web3Modal = new Web3Modal({
+                cacheProvider: true, // optional
+                providerOptions, // required
+                disableInjectedProvider: false, // optional. For MetaMask / Brave / Opera.
+              });
+              window.onload = connect();
+              async function connect(){
+                    try {
+                        provider = await web3Modal.connect();
+                        const web3 = new Web3(provider);
+                        const chainId = await web3.eth.getChainId();
+                        const chainData = evmChains.getChain(chainId);
+                          if(chainData && chainData.chainId && chainData.chainId==97){
+                          }else{
+                            alert("Choose Binance Testnet");
+                            document.cookie = "show" +'=; Path=/';
+                            document.cookie = "auth" +'=; Path=/';
+                          }
+                      } catch(e) {
+                        toastr.error("Could not get a wallet connection");
+                        return;
+                      }
+                      // Subscribe to accounts change
+                      provider.on("accountsChanged", (accounts) => {
+                        fetchAccountData();
+                      });
+
+                      // Subscribe to chainId change
+                      provider.on("chainChanged", (chainId) => {
+                        fetchAccountData();
+                      });
+
+                      // Subscribe to networkId change
+                      provider.on("networkChanged", (networkId) => {
+                        fetchAccountData();
+                      });
+
+            }
+            async function fetchAccountData(){
+
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=League+Spartan&display=swap');
+*{
+font-family: 'League Spartan', sans-serif;
+}
+.back-video1{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   z-index: -1;
+   width: 100%;
+   }
+.banner-left h1{
+   font-weight:400;
+   font-size: 40px;
+   line-height: 37px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+  
+   
+}
+.banner-left h2{
+   font-weight:900;
+   font-size: 40px;
+   color: #FFFFFF;
+   margin-left: -40px;
+
+}
+.banner-left a{
+   margin-top: 20px;
+}
+
+.logo{
+   margin-top: 40px;
+   width: 14%; 
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+.sefname{
+   width: 14%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+/* .vote{
+   margin-left: 400px;
+   margin-top: -89px;
+} */
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 40px 100px;
+    margin:0px;
+}
+.btn-danger{
+   margin-left: -98px;
+}

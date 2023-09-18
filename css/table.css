@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito',sans-serif;
+  }
+  body {
+    background-image: url(../images/Genbg.png);
+   background-repeat: no-repeat;
+   min-height: 100vh;
+   background-size: cover;
+   }
+  #nav-bar{
+    position:sticky;
+    top:0;
+    z-index: 10;
+  }
+  .navbar{
+    background-image: linear-gradient(135deg,#1a1818,#000000);
+    padding: 0 !important;
+  }
+  #navbar-nav{
+    display: flex;
+    align-content : flex-end;
+  
+    }
+  .navbar-nav li
+  {
+    padding: 10px 10px;
+  }
+  .navbar-nav li a{
+    color: #fff !important;
+    text-align: right;
+    font-weight: 600;
+  }
+  .navbar-toggler{
+  outline: none !important;
+  color: #fff;
+  }
+
+  .btn-dark:hover{
+    color: #000000!important;
+    border-radius: 5px !important;
+    background: #f1efef !important;
+  }
+.hea{
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  table{
+    width:100%;
+    border-radius: 8px;
+    table-layout: fixed;
+  }
+  .tbl-header{
+    background-color: rgb(190, 186, 186);
+    border-radius: 8px
+   }
+  .tbl-content{
+    height:260px;
+    margin-top: 0px;
+    border: 1px solid rgb(190, 186, 186);
+  }
+  th{
+    padding: 20px 15px;
+    text-align: center !important;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  td{
+    padding: 15px;
+    text-align: center;
+    vertical-align:middle;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ffffff;
+    border-bottom: solid 1px rgb(190, 186, 186);
+  }
+  
+ .btn-light{
+
+    font-weight: 600;
+     color: #000000;
+  }
+  .btn-dark{
+    text-transform: uppercase;
+    font-weight: 500;
+     color: #ffffff;
+  }
+  .btn-danger{
+    box-shadow: none;
+    border:none;
+    padding: 7px 15px;
+    font-weight: 400;
+    border-radius:8px;
+    color: #ffffff;
+  }
+  #tab{
+    margin: 50px;
+  }
+
+.tbody-candidate__list{
+  background: rgb(0, 0, 0);
+  opacity: 7;
+  border-radius: 8px;
+  border: 1px solid rgb(247, 247, 247);
+  overflow-x:auto !important;
+  vertical-align:middle;
+}

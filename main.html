@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Dashboard</title>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="stylesheet" href="./css/hero2.css"/>
+  <link
+  href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+  rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ 
+</head>
+ 
+<!--<style>
+      body {
+        display: flex;
+         min-height: 100vh;
+        flex-direction: column;
+      }
+      man{
+          height: 200px;
+
+        }
+  main {
+    flex: 1 0 auto;
+  }
+.blacktext {
+        color: black;
+        font-size: 20px;
+}
+
+</style>-->
+<style>
+body {
+  background-image: url(../images/mainbg2.png) !important;
+}
+.btn-light{
+color: black !important;
+font-weight: 400 !important;
+font-size: 14px !important;
+ }
+ .btn-dark:hover{
+  color: #000000 !important;
+  border-radius: 5px;
+  background: #f1efef;
+}
+</style>
+    
+<main>
+<bodyt >
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg bg-dark">
+<div class="container-fluid">
+ <a class="navbar-brand" href="#"><img src="./images/seflogo1.png" width="70%" style="margin-left: 25px;" /></a>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <i class="fa fa-bars"></i>
+</button>
+ <div class="collapse navbar-collapse" id="navbarNav">
+   <ul class="navbar-nav ms-auto" >
+     <li class="nav-item">
+      <button id="candidatelist" class="btn btn-dark" type="button">Candidate List</button>
+     </li>
+     <li class="nav-item">
+      <button id="voterlist" class="btn btn-dark" type="button">Voter List</button>
+     </li>
+     <li class="nav-item">
+      <button id="votenow" class="btn btn-dark" type="button">Vote Now</button>
+     </li>
+     <li class="nav-item">
+      <button id="result" class="btn btn-dark" type="button">Result</button>
+     
+       </li>
+       <li class="nav-item">
+        <button id="logout" class="btn btn-dark" type="button">Logout</button>
+       </li>
+   </ul>
+ </div>
+</div>
+</nav> 
+ </section>
+	
+  <div class="container">
+   <div id="card-alert" >
+      <div id="notify">
+        <p id="loc_info"></p>
+      </div>
+
+    </div>
+  </div>
+  <div class="hero">
+    <div class="info">
+        <h1>YOUR <span> VOTE</span> IS SAFE</h1>
+       
+        <p>Vote for your Favourite party and verify your anytime. </p>
+       
+    </div>
+    <div class="img-box">
+        <img src="./images/back 1 .png" class="back-img">
+        <img src="./images/votedhands.png" class="man-img">
+    </div>
+   
+</div>
+  </main>
+        </tbody>
+      </bodyt>
+
+
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script> 
+           <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+                  
+        <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+
+        <script type="text/javascript" src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+        <script src="https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css">
+          <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@walletconnect/browser@1.0.0-beta.46/lib/index.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@walletconnect/qrcode-modal@1.0.0-beta.46/lib/index.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="trust-wallet-connect-img.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+</html>

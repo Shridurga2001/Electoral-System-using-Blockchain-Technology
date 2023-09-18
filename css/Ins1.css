@@ -1,0 +1,249 @@
+ *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body{
+  width: 100%
+}
+
+#banner{
+color: rgb(255, 255, 255);
+min-height: calc(100vh - 48px);
+/* padding: 170px 0 10px; */
+position: relative;
+width:100%;
+overflow: hidden;
+}
+/* #back-video1{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  min-height: 100%;
+  height:auto;
+  width:auto;
+  z-index: -100;
+} */
+
+#nav-bar{
+  position:sticky;
+  top:0;
+  z-index: 10;
+}
+.navbar{
+  background-image: linear-gradient(135deg,#1a1818,#4d4c4c);
+  padding: 0 !important;
+}
+#navbar-nav{
+  display: flex;
+  align-content : flex-end;
+
+  }
+.navbar-nav li
+{
+  padding: 0 10px;
+}
+.navbar-nav li a{
+  color: #fff !important;
+  text-align: right;
+}
+.navbar-toggler{
+outline: none !important;
+}
+/*banner section*/
+.promo-title{
+  font-size: 35px;
+  font-weight: 600;
+ color: rgb(255, 255, 255);
+}
+
+#banner a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  width:100%
+}
+.promo-para{
+  margin-bottom: 36px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  word-spacing: 2px;
+  font-size: 18px;
+}
+.img-fluid{
+  width:220px;
+  height: 240px;
+ margin-left: 180px;
+ margin-top: 60px; 
+  animation-name: example;
+ animation-duration: 4s;
+}
+.bottom-img{
+  width:100%
+}
+#banner .btn-light{
+  box-shadow: none;
+  border:none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius:12px;
+  color: #000000;
+}
+/*===========services section-----------*/
+#services
+{
+  padding: 51px 0;
+  width:100%;
+  background-image: url(../images/block.png);
+}
+.card{
+  padding:10px 20px;
+  backdrop-filter:blur(6px);
+  border-radius:30px;
+  border:2px solid rgb(255 255 255 / 13%);
+  color:rgba(0, 0, 0, 0.9);
+  background-image: linear-gradient(93deg,#d8d5d5e3,#e2e2e2d5);
+  box-shadow:20px 20px 22px rgba(0, 0, 0, 0.2);
+  height: 300px !important;
+}
+.card-title{
+  font-weight:700;
+}
+.card-text{
+  font-weight:400;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+}
+.circle{
+  width:60px;
+  height:60px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background: linear-gradient(93deg,#146600,#0c8a3ceb);
+  transform:translateY(-32px);
+  border-radius:50%;
+  box-shadow:#00e257db 0px 28px 71px 8px;
+}
+.circle i{
+  font-size:21px;
+  font-weight:700;
+}
+.circle1{
+  background: linear-gradient(93deg, #ffff00,#ff4800);
+  box-shadow:#e2d600db 0px 28px 71px 8px;
+}
+.circle3{
+  background: linear-gradient(93deg, #ff00ff,#990148);
+  box-shadow:#e200bcdb 0px 28px 71px 8px;
+}
+
+.btn:hover{
+  color:#fff;
+  outline:none;
+}
+
+#services .btn-primary{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*about us*/
+#about-us{
+  background-image:url(../images/datablocks1.png);
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  padding-bottom: 145px;
+  padding-top: 93px;
+}
+.about-title{
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 8%;
+}
+#about-us ul li{
+  margin: 10px 0;
+}
+#about-us ul{
+  margin-left :20px;
+}
+/* testimonials*/
+#testimonials{
+  background-color: #ffffff;
+}
+.testimonials{
+  border-left: 4px solid #810101;
+  margin-top: 59px;
+  margin-bottom: 50px;
+}
+.testimonials img{
+  height: 70px;
+  width: 68px;
+  border-radius: 60%;
+  margin:0 10px;
+}
+.user-details{
+  display: inline-block;
+  font-size: 9px;
+}
+/*social mediaaa*/
+#social-media{
+  background: rgb(250, 250, 253);
+  padding: 25px 0;
+}
+#social-media p{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.social-icons img{
+  width:60px;
+  transition: 0.5s;
+}
+.social-icons a:hover img{
+  transform: translateY(-10px);
+}
+
+/*footer*/ 
+
+#footer
+{
+  background-image: linear-gradient(95deg,#141414,#181717,#161616,#161616,#8a4838);
+color: #ffffff;
+}
+.footer-img{
+ width:100% 
+}
+.footer-box{
+  padding: 20px;
+}
+.footer-box img{
+  width: 120px;
+ margin-bottom: 20px; 
+}
+.footer-box .iconscon{
+width: 15px;
+margin-top: 15px;
+color: #fff;
+}
+
+
+
+.video-holder{
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0
+}

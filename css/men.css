@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito',sans-serif;
+}
+body {
+  background-image: url(../images/Genbg.png);
+ background-repeat: no-repeat;
+ min-height: 100vh;
+ background-size: cover;
+ }
+   
+#nav-bar{
+  position:sticky;
+  top:0;
+  z-index: 10;
+}
+.navbar{
+  background-image: linear-gradient(135deg,#1a1818,#000000);
+  padding: 0 !important;
+}
+#navbar-nav{
+  display: flex;
+  align-content : flex-end;
+}
+.navbar-nav li
+{
+  padding: 10px 10px;
+}
+.navbar-nav li a{
+  color: #fff !important;
+  text-align: right;
+  font-weight: 600;
+}
+.navbar-toggler{
+outline: none !important;
+color: #fff;
+}
+
+.btn-dark:hover{
+  color: #000000!important;
+  border-radius: 5px !important;
+  background: #f1efef !important;
+}
+/* candidate*/
+.voting-section{
+    padding: 50px 0;
+    text-align: center;
+
+
+}
+.voting-card{
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    padding:50px 15px;
+    
+}
+.voting-card h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+}
+.btn-light{
+  box-shadow: none;
+  border:none;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 12px;
+  border-radius:12px;
+  color: #ffffff;
+}
+.img-fluid{
+  width:37%;
+  border-radius: 70px;
+}
+.img-fluid1{
+  width:39.5%;
+  border-radius: 70px;
+}
+
+.candi{
+  color: #fff;
+}
+p{
+  color: #fff;
+  font-weight: 800;
+  font-size: 17px;
+}
+

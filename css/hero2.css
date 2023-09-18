@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito',sans-serif;
+}
+body {
+  background-image: url(../images/Genbg.png);
+ background-repeat: no-repeat;
+ min-height: 100vh;
+ background-size: cover;
+
+ }
+#nav-bar{
+  position:sticky;
+  top:0;
+  z-index: 10;
+}
+.navbar{
+  background-image: linear-gradient(135deg,#1a1818,#000000);
+  padding: 0 !important;
+}
+#navbar-nav{
+  display: flex;
+  align-content : flex-end;
+}
+.navbar-nav li
+{
+  padding: 10px 10px;
+}
+.navbar-nav li a{
+  color: #fff !important;
+  text-align: right;
+  font-weight: 600;
+}
+.navbar-toggler{
+outline: none !important;
+color: #fff;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-dark:hover{
+  color: #000000 !important;
+  border-radius: 5px !important;
+  background: #f1efef !important;
+}
+.card{
+  margin-top: 80px;
+  padding:20px 30px;
+  backdrop-filter:blur(6px);
+  border-radius:10px;
+  border:2px solid rgb(255 255 255 / 13%);
+  color:rgba(0, 0, 0, 0.9);
+  background-color: rgb(255, 255, 255);
+  box-shadow:20px 20px 22px rgb(0 0 0/20%);
+  margin-bottom: 20px;
+}
+
+.form-label{
+  color: #000000;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.doc{
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+.circle{
+  width:60px;
+  height:60px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background: linear-gradient(93deg,#ffffff,#faf4a2eb);
+  transform:translateY(-32px);
+  border-radius:50%;
+  box-shadow:#fcf9d6db 0px 28px 71px 8px;
+}
+.btn{
+  outline:none;
+  display:flow-root;
+  width:fit-content;
+  padding:10px 20px;
+  color:#fff;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  border:2px solid rgb(255 255 255 / 13%);
+  border-radius:10px;
+}
+.login_form input{
+  margin-top: 13px;
+  border: 2px solid #000;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+.doc1{
+  color: #000000;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+}
+.center1{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.side-head{
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* rdj.html */
+.candidate-section{
+  padding: 60px 0;
+  text-align: center;
+}
+.cand-head{
+  color: #fff;
+  font-size: 29px;
+  font-weight: 600;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.sentence{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  word-spacing: 3px;
+  line-height:28px;
+  text-align: left ;
+}
+
+/*HEMsi .html*/
+.img-fluid{
+margin-top: -35px;
+}
+.img-fluid1{
+  margin-top: 40px;
+}
+
+
+
+.info{
+  margin-left: 8%;
+  margin-top: 15%;
+}
+.info h1{
+  font-size: 40px;
+  color: #ffffff;
+}
+.info h1 span{
+ color: #f8fa77;
+}
+.info p{
+  color: #fdff9a;
+  line-height: 22px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.img-box{
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+.img-box .back-img{
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+.img-box .man-img{
+  height: 90%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+.img-box:hover .back-img{
+  bottom: 40px;
+}
+.img-box:hover .man-img{
+  left: 54%;
+}
